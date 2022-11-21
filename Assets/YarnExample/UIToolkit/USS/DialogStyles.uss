@@ -1,0 +1,156 @@
+:root {
+    --rounded-radius: 8px;
+    --red-theme-font: rgb(255, 255, 255);
+    --red-theme-bg: rgb(164, 0, 0);
+}
+
+#name-label {
+    flex-shrink: 1;
+    -unity-font-style: bold;
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+#line-text {
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 90%;
+    align-items: flex-start;
+}
+
+#character-image {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.user-blue {
+    background-image: url('project://database/Assets/YarnExample/Textures/user.png?fileID=2800000&guid=0edcf8c5bae4f4b208905e1145a4636d&type=3#user');
+}
+
+.red-theme #name-label {
+    color: var(--red-theme-bg);
+}
+
+.red-theme .rounded-btn {
+    color: var(--red-theme-bg);
+    border-color: var(--red-theme-bg);
+}
+
+.red-theme .btn-circle-btn {
+    background-color: var(--red-theme-bg);
+    color: var(--red-theme-font);
+}
+
+.rounded-btn {
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    background-color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    border-top-left-radius: var(--rounded-radius);
+    border-bottom-left-radius: var(--rounded-radius);
+    border-top-right-radius: var(--rounded-radius);
+    border-bottom-right-radius: var(--rounded-radius);
+    margin-bottom: 0;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    font-size: 10px;
+    min-width: auto;
+    flex-direction: row;
+    flex-grow: 0;
+}
+
+.btn-circle-btn {
+    width: 28px;
+    height: 28px;
+    margin-left: 0;
+    margin-right: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-size: 26px;
+    -unity-text-align: lower-center;
+}
+
+#yarn-content-wrappr {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-top-left-radius: var(--rounded-radius);
+    border-bottom-left-radius: var(--rounded-radius);
+    border-top-right-radius: var(--rounded-radius);
+    border-bottom-right-radius: var(--rounded-radius);
+    padding: 15px;
+}
+
+#modal-cover {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    right: 0;
+    bottom: 0;
+}
+
+#options-wrapper {
+    display: none;
+}
+
+.showing-options #options-wrapper {
+    display: flex;
+}
+
+.showing-options #continue {
+    display: none;
+}
+
+#option-selection {
+    margin-bottom: 20px;
+}
+
+#options-wrapper {
+    flex-direction: column;
+}
+
+#options-wrapper.options-2 {
+    flex-direction: row;
+}
+
+.options-2 .child-2 {
+    margin-left: auto;
+}
+
+.options-2 .option-button {
+    margin-bottom: 0;
+}
+
+.options-2 .child-2 .option-button {
+    flex-direction: row-reverse;
+    padding-left: 4px;
+    padding-right: 40px;
+}

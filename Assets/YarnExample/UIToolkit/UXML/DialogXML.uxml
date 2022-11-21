@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/YarnExample/UIToolkit/USS/DialogStyles.uss?fileID=7433441132597879392&amp;guid=701a55352ea634aa982e9b903bf1e55f&amp;type=3#DialogStyles" />
+    <ui:VisualElement name="modal-cover" />
+    <ui:VisualElement name="positioner" class="red-theme" style="flex-grow: 0; max-height: none; width: 75%; margin-left: auto; margin-right: auto; margin-top: 10%;">
+        <ui:VisualElement name="yarn-content-wrappr">
+            <ui:VisualElement name="dialog-wrapper" style="align-items: flex-start;">
+                <ui:Label tabindex="-1" text="USERNAME" display-tooltip-when-elided="true" name="name-label" enable-rich-text="false" />
+                <TypewriterLabel text="a really long line of text that goes on for a bit a really long line of text that goes on for a bit&#10;" maxVisibleCharacters="500" name="line-text" />
+                <ui:Button tabindex="-1" display-tooltip-when-elided="true" name="continue" enable-rich-text="false" class="rounded-btn">
+                    <ui:Label tabindex="-1" text="CONTINUE" display-tooltip-when-elided="true" name="textual-label" />
+                    <ui:Label tabindex="-1" text="&gt;" display-tooltip-when-elided="true" name="circle-button" class="btn-circle-btn" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="options-wrapper" style="flex-grow: 1;" />
+            <ui:VisualElement name="character-image" class="user-blue" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

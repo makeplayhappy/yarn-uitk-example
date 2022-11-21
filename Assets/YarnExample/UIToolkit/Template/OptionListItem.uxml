@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button tabindex="-1" display-tooltip-when-elided="true" enable-rich-text="false" name="option-selection" class="option-button rounded-btn">
+        <ui:Label tabindex="-1" text="Label text" display-tooltip-when-elided="true" name="option-label" />
+        <ui:Label tabindex="-1" text="&gt;" display-tooltip-when-elided="true" name="selection-indicator" class="btn-circle-btn" />
+    </ui:Button>
+</ui:UXML>

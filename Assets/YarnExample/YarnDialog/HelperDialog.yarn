@@ -1,0 +1,52 @@
+title: Start
+---
+<<set $waited = 0>>
+<<jump Pondering>>
+===
+title: Pondering
+---
+Mike: Michelle?
+Michelle: How's it going?  It's been a while...
+Mike: ... {$waited} months.
+Michelle: How are you doing?
+Mike: Fine... I guess.  You?
+Mike: What kind of things?
+    -> Phone Mike 
+        <<jump PhoneCall>>
+    -> Think a while
+        Michelle: You're right, if you call too soon I might scare him off
+        <<set $waited += 1>>
+        <<wait 1>>
+        <<jump Pondering>>
+===
+title: PhoneCall
+---
+Michelle: Whats up
+Mike: Hello?
+Michelle: Hi Michael.
+Mike: Michelle?
+Michelle: How's it going?  It's been a while...
+Mike: ... {$waited} months.
+Michelle: How are you doing?
+Mike: Fine... I guess.  You?
+Michelle: Good.
+<<wait 2>>
+Michelle: I think about things.
+Mike: Yeah?
+Michelle: Yeah.
+Mike:What kind of things?
+Michelle: You know, us.
+Mike: I thought you met someone else.
+Michelle: It doesn't matter.  I think about you every day.
+Mike: Really?
+Michelle: I miss you, Mike.
+<<if $waited > 0>>
+    Mike: Why didn't you call?
+    Mike: Lets get together
+<<else>>
+    Mike: I gotta dash, nice chatting... bye.
+    <<wait 2>>
+    Michelle: Damn it.
+<<endif>>
+<<jump Pondering>>
+===
